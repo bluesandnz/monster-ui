@@ -46,19 +46,13 @@ define(function(require){
 			// 	}
 			// });
 			callback({
-				"US": {
+                                "NZ": {
 					"local": true,
-					"toll_free": [
-						800,
-						888,
-						877,
-						866,
-						855
-					],
-					"vanity": true,
-					"prefix": 1,
-					"name": "United States"
-				}
+					"toll_free": false,
+					"vanity": false,
+					"prefix": 64,
+					"name": "New Zealand"
+				}                                
 			});
 		},
 
