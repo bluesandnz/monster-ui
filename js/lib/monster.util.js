@@ -202,13 +202,13 @@ define(function(require){
 				phoneNumber = phoneNumber.toString();
 
                                 if(phoneNumber.substr(0,3) === "+64" && phoneNumber.length === 11) {
-					phoneNumber = phoneNumber.replace(/\+(\d{2})(\d{1})(\d{3})(\d{4})/, '0($2) $3 $4');
+					phoneNumber = phoneNumber.replace(/\+(\d{2})(\d{1})(\d{3})(\d{4})/, '0$2 $3 $4');
 				}
                                 else if(phoneNumber.substr(0,3) === "64" && phoneNumber.length === 10) {
-					phoneNumber = phoneNumber.replace(/(\d{2})(\d{1})(\d{3})(\d{4})/, '0($2) $3 $4');
+					phoneNumber = phoneNumber.replace(/(\d{2})(\d{1})(\d{3})(\d{4})/, '0$2 $3 $4');
 				}
                                 else if(phoneNumber.substr(0,3) === "64") {
-					phoneNumber = phoneNumber.replace(/(\d{2})(\d{2})(\d{3})(\d)/, '0($2) $3 $4');
+					phoneNumber = phoneNumber.replace(/(\d{2})(\d{2})(\d{3})(\d)/, '0$2 $3 $4');
 				}
                                 else if(phoneNumber.substr(0,2) === "+1" && phoneNumber.length === 12) {
 					phoneNumber = phoneNumber.replace(/(\+1)(\d{3})(\d{3})(\d{4})/, '$1 ($2) $3-$4');
